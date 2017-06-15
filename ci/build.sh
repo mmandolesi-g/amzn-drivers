@@ -2,11 +2,11 @@
 
 set -e -u -x
 
-yum install kernel-{devel,headers}-3.10.0-514.6.2.el7.x86_64 -y
+yum install kernel-{devel,headers}-${KERNEL_VERSION}.el7.x86_64 -y
 yum install git gcc make rpm-build -y
 cd kernel/linux/rpm/
 make
-rpmbuild  --rebuild ena-1.1.3-1.el7.centos.src.rpm
+rpmbuild  --rebuild ena-${VERSION}-${RELEASE}.el7.centos.src.rpm
 ls -hal /root/rpmbuild/RPMS/x86_64
 echo "${gdcustom_key}" > gdcustom-ssh.key
 chmod 400 gdcustom-ssh.key
