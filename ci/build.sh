@@ -4,6 +4,7 @@ set -e -u -x
 
 yum install kernel-{devel,headers}-3.10.0-514.6.2.el7.x86_64 -y
 yum install git gcc make rpm-build -y
+ls -hal
 cd amzn-drivers/kernel/linux/rpm/
 make
 rpmbuild  --rebuild ena-1.1.3-1.el7.centos.src.rpm
