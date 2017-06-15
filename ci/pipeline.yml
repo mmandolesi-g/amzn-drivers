@@ -27,6 +27,8 @@ jobs:
         KERNEL_VERSION: {{KERNEL_VERSION}}
         VERSION: {{VERSION}}
         RELEASE: {{RELEASE}}
+        YUM_SERVER: {{YUM_SERVER}}
+        YUM_USER: {{YUM_USER}}
       run:
         path: sh
         args: ['-c', 'cd amzn-drivers && ci/build.sh']
