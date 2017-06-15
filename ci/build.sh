@@ -8,6 +8,7 @@ cd kernel/linux/rpm/
 make
 rpmbuild  --rebuild ena-1.1.3-1.el7.centos.src.rpm
 cd ../../../../
+ls -hal
 ls -hal /root/rpmbuild/RPMS/x86_64
 cp /root/rpmbuild/RPMS/x86_64/*.rpm rpm-artifacts/
 ls -hal rpm-artifacts/

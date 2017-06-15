@@ -23,7 +23,7 @@ jobs:
       inputs:
         - name: amzn-drivers
       outputs:
-        -name: rpm-artifacts
+        - name: rpm-artifacts
       params:
         gdcustom_key: {{gdcustom_key}}
       run:
