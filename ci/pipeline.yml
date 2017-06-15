@@ -22,6 +22,8 @@ jobs:
           insecure_registries: [ "paas-docker-artifactory.gannettdigital.com" ]
       inputs:
         - name: amzn-drivers
+      outputs:
+        -name: rpm-artifacts
       params:
         gdcustom_key: {{gdcustom_key}}
       run:
