@@ -26,4 +26,4 @@ jobs:
         gdcustom-key: {{gdcustom-key}}
       run:
         path: sh
-        args: ['ci/build.sh']
+        args: ['-c', 'cd amzn-drivers && ci/build.sh']
