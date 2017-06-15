@@ -23,7 +23,7 @@ jobs:
       inputs:
         - name: amzn-drivers
       params:
-        GDCUSTOM_KEY: {{GDCUSTOM_KEY}}
+        gdcustom_key: {{gdcustom_key}}
         KERNEL_VERSION: {{KERNEL_VERSION}}
         VERSION: {{VERSION}}
         RELEASE: {{RELEASE}}
